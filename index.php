@@ -43,14 +43,13 @@
     </div>
     <!-- parametres de changement de theme fin -->
     <div class="hautpage">
-        <a href="#apropos"><span>scroll</span> <i class="fas fa-mouse"></i></a>
+        <a href="#a_propos"><span>scroll</span> <i class="fas fa-mouse"></i></a>
     </div>
     <!-- debut medais -->
     <div class="medias">
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-        <a href=""><i class="fab fa-whatsapp"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
+        <a  href="https://m.me/audacieux.mbagira"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+243995399340&text=Salut, ecrivez-moi sur whatsapp pour plus d'information"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/audmbag"><i class="fab fa-github"></i></a>
     </div>
     <!-- fin medias -->
     <!-- navigation debut -->
@@ -61,8 +60,6 @@
             <li class="active"><a href="#accueil"><i class="fas fa-home"></i> <span>Accueil</span></a></li>
             <li><a href="#a_propos"><i class="fas fa-user"></i> <span>A propos</span></a></li>
             <li><a href="#experience"><i class="fas fa-project-diagram"></i> <span>Services</span></a></li>
-            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> <span>Portfolio</span></a></li>
-            <li><a href="#blogs"><i class="fas fa-blog"></i> <span>Blogs</span></a></li>
             <li><a href="#contact"><i class="fas fa-id-card"></i> <span>Contact</span></a></li>
         </ul>
     </div>
@@ -88,21 +85,6 @@
                         </div>
                         <div class="container">
                             <div class="item">
-                                <p style="--id: 10">Designeur.</p>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="item">
-                                <p style="--id: 10">Freelance.</p>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="item">
-                                <p style="--id: 10">Youtubeur.</p>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="item">
                                 <p style="--id: 9">Etudiant.</p>
                             </div>
                         </div>
@@ -111,7 +93,6 @@
             </div>
 
             <div class="boutons">
-                <a download href="cv/CV Mukolo Mbagira Audacieux.docx" class="download" >Télécharger CV</a>
                 <a class="a_propos" href="#a_propos">A propos</a>
             </div>
         </div>
@@ -124,7 +105,7 @@
     <div class="content_princ">
         <div class="a_propos" id="a_propos">
             <h2 class="titre">A PORPOS DE MOI</h2>
-            <h3 class="sous_titre">Tout sur moi</h3>
+            <h3 class="sous_titre">Tout savoir sur moi</h3>
 
 
             <div class="container_app">
@@ -290,134 +271,6 @@
             </div>
         </div>
 
-        <div class="portfolio" id="portfolio">
-            <h2 class="titre">PORTFOLIO</h2>
-            <h3 class="sous_titre">MES PROJETS RECENTS</h3>
-
-            <div class="conainer_portfolio">
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/audi.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\nouveautés 2022\exo_audi\index.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/chien.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\pagewechopchien\index.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/cafe.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\pagewebcafé\index.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/ff.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\nouveautés 2022\bio\index.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/Grftup.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\pagewebfinance\index.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/Group 2.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\nouveautés 2022\place_aud_mbag\index.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/Group 3.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\nouveautés 2022\porfolio\projet_multipage_portfolio\accueil.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/Group 4.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\nouveautés 2022\porfolio\portfolio\index.html" data-name="" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-                <div class="carte">
-                    <div class="image">
-                        <img src="images/portfolio/Group.png">
-                    </div>
-                    <button data-name="C:\Users\Christian Mbagira\Desktop\exercices aud\performences\nouveautés 2022\E_C_simple\index.html" class="voir_plu">Voir plus <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="blog" id="blogs">
-            <h2 class="titre">BLOGS</h2>
-            <h3 class="sous_titre">MES BLOGS MENSUELS</h3>
-            <div class="containe_blog">
-                <div class="blog_carte">
-                    <div class="image">
-                        <img src="images/blog/1.jpg">
-                    </div>
-                    <div class="containt">
-                        <h2>Orienté Objet</h2>
-                        <p>Lorem ipsum dolor sit, sapiente sed perspiciatis omnis. Provident quisquam consectetur velit et id excepturi beatae sint quo placeat quos?</p>
-                        <button>lire plus</button>
-                    </div>
-                </div>
-                <div class="blog_carte">
-                    <div class="image">
-                        <img src="images/blog/6.jpg">
-                    </div>
-                    <div class="containt">
-                        <h2>Trading</h2>
-                        <p>Lorem ipsum dolor sit, sapiente sed perspiciatis omnis. Provident quisquam consectetur velit et id excepturi beatae sint quo placeat quos?</p>
-                        <button>lire plus</button>
-                    </div>
-                </div>
-                <div class="blog_carte">
-                    <div class="image">
-                        <img src="images/blog/3.jpg">
-                    </div>
-                    <div class="containt">
-                        <h2>32 GB de RAM ?</h2>
-                        <p>Lorem ipsum dolor sit, sapiente sed perspiciatis omnis. Provident quisquam consectetur velit et id excepturi beatae sint quo placeat quos?</p>
-                        <button>lire plus</button>
-                    </div>
-                </div>
-                <div class="blog_carte">
-                    <div class="image">
-                        <img src="images/blog/7.png">
-                    </div>
-                    <div class="containt">
-                        <h2>L'emergence du Web</h2>
-                        <p>Lorem ipsum dolor sit, sapiente sed perspiciatis omnis. Provident quisquam consectetur velit et id excepturi beatae sint quo placeat quos?</p>
-                        <button>lire plus</button>
-                    </div>
-                </div>
-                <div class="blog_carte">
-                    <div class="image">
-                        <img src="images/blog/8.jpg">
-                    </div>
-                    <div class="containt">
-                        <h2>Fin du tactile ???</h2>
-                        <p>Lorem ipsum dolor sit, sapiente sed perspiciatis omnis. Provident quisquam consectetur velit et id excepturi beatae sint quo placeat quos?</p>
-                        <button>lire plus</button>
-                    </div>
-                </div>
-                <div class="blog_carte">
-                    <div class="image">
-                        <img src="images/blog/9.png">
-                    </div>
-                    <div class="containt">
-                        <h2>Le graphisme</h2>
-                        <p>Lorem ipsum dolor sit, sapiente sed perspiciatis omnis. Provident quisquam consectetur velit et id excepturi beatae sint quo placeat quos?</p>
-                        <button>lire plus</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="contact" id="contact">
             <h2 class="titre">CONTACT</h2>
@@ -498,69 +351,6 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="overlay"></div>
-    <div class="work_toogle">
-        <i class="fas fa-times"></i>
-        <div class="image">
-            <img src="" alt="">
-        </div>
-        <div class="containt">
-            <h3 class="sous_titre">WEB DESIGN</h3>
-
-            <div class="details">
-                <p>
-                    <span>Travail :</span>
-                    <span>Web-design</span>
-                </p>
-                <p>
-                    <span>Date :</span>
-                    <span>01/03/2022</span>
-                </p>
-                <p>
-                    <span>Lien du site :</span>
-                    <span><a target="bank" href=""></a></span>
-                </p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi beatae dolor perferendis repellendus, repudiandae dolore vel, veritatis laudantium suscipit, quia accusamus esse quibusdam provident repellat autem doloribus at quisquam perspiciatis iste? Suscipit labore minus explicabo, deleniti laboriosam nisi provident voluptatum! Magni cum vel quae quod ipsum laboriosam, corporis sapiente?</p>
-            <br>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque illo in est quidem sit nihil atque doloremque aperiam voluptate enim eum totam dolorum inventore magni, dicta magnam, provident laboriosam!
-            <br><br> Recusandae, provident quae iure nam dolore cumque! Quis laboriosam, illo omnis iste nemo labore excepturi, deleniti maxime aliquid nihil dolores provident saepe, aut obcaecati facilis! Impedit ipsa natus vel a.</p>
-        </div>
-    </div>
-    <div class="blog_toogle">
-        <i class="fas fa-times"></i>
-        <div class="image">
-            <img src="images/blog/1.jpg" alt="">
-        </div>
-        <div class="containt">
-            <h3 class="sous_titre">ORIENTE OBJET</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi beatae dolor perferendis repellendus, repudiandae dolore vel, veritatis laudantium suscipit, quia accusamus esse quibusdam provident repellat autem doloribus at quisquam perspiciatis iste? Suscipit labore minus explicabo, deleniti laboriosam nisi provident voluptatum! Magni cum vel quae quod ipsum laboriosam, corporis sapiente?</p>
-            <br>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque illo in est quidem sit nihil atque doloremque aperiam voluptate enim eum totam dolorum inventore magni, dicta magnam, provident laboriosam!
-            <br><br> Recusandae, provident quae iure nam dolore cumque! Quis laboriosam, illo omnis iste nemo labore excepturi, deleniti maxime aliquid nihil dolores provident saepe, aut obcaecati facilis! Impedit ipsa natus vel a.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint earum aliquid repellat quaerat veritatis accusamus dolore ratione similique, nam ea, iusto rerum temporibus accusantium numquam architecto. Eius placeat officiis omnis.
-            Voluptate, magnam error nam ducimus vitae quo repellat quos quisquam maiores eos pariatur unde eaque aut ipsum non eveniet vero architecto eum consectetur aspernatur qui minus blanditiis? Amet, accusantium expedita!</p>
-            <br><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, error ad quos cumque explicabo nemo! Suscipit iure at error!</p>
-            <div class="details">
-                <p>
-                    <span>Source :</span>
-                    <span><a href="">wikipedia.com</a></span>
-                </p>
-                <p>
-                    <span>Date :</span>
-                    <span>01/03/2022</span>
-                </p>
-                <p>
-                    <span>Ecrit par :</span>
-                    <span>Audacieux Mbagira</span>
-                </p>
             </div>
         </div>
     </div>
