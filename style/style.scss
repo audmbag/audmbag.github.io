@@ -457,7 +457,7 @@ body{
 }
 @keyframes long {
     from{top: 0%;}
-    to{top: -300%;}
+    to{top: -400%;}
 }
 .banniere_p{
     @include flex(center, center);
@@ -497,7 +497,7 @@ body{
             }
             .dev{
                 position: absolute;
-                animation: long 3s infinite steps(3);
+                animation: long 4s infinite steps(4);
             }
         }
         .boutons{
