@@ -956,6 +956,9 @@ header {
         flex: 100%;
         text-align: center;
     }
+    .content_princ {
+        width: 95%;
+    }
 }
 @media screen and (max-width: 690px) {
     .contact .container .formulaire form{

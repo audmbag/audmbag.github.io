@@ -64,7 +64,8 @@ h1, h2, h3 {
 .image_hover img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .titre {
@@ -344,7 +345,8 @@ header {
 }
 .navigation.mobil_nav ul li a {
   width: 100%;
-  padding-inline-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -361,7 +363,8 @@ header {
   border: 1px solid var(--blanc2);
   border-right: var(--blanc3);
   border-bottom: var(--blanc3);
-  backdrop-filter: var(--filter);
+  -webkit-backdrop-filter: var(--filter);
+          backdrop-filter: var(--filter);
 }
 .navigation.active ul li a span {
   visibility: visible;
@@ -453,7 +456,8 @@ header {
   border: 1px solid var(--blanc2);
   border-right: var(--blanc3);
   border-bottom: var(--blanc3);
-  backdrop-filter: var(--filter);
+  -webkit-backdrop-filter: var(--filter);
+          backdrop-filter: var(--filter);
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
@@ -602,7 +606,8 @@ header {
 .banniere_p .image img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .content_princ {
@@ -661,7 +666,8 @@ header {
 .a_propos .container_app .cont_cnt .center img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .a_propos .container_app .cont_cnt a {
   font-size: 1.5rem;
@@ -939,28 +945,22 @@ header {
   .navigation.mobil_nav {
     display: block;
   }
-
   .banniere_p {
     width: 95%;
   }
-
   .content_princ {
     width: 75%;
   }
-
   .medias {
     left: 0;
     bottom: 0;
   }
-
   .montre_logo {
     left: 3rem;
   }
-
   footer {
     margin-top: 5rem;
   }
-
   .titre {
     margin-left: 3rem;
   }
@@ -969,7 +969,6 @@ header {
   .a_propos .ma_formation .container {
     gap: 2rem;
   }
-
   .a_propos .ma_formation .container .containt {
     flex: 100%;
   }
@@ -978,7 +977,6 @@ header {
   html {
     font-size: 55%;
   }
-
   .banniere_p .containt {
     flex: 1 1 100%;
   }
@@ -986,18 +984,18 @@ header {
     flex: 1 1 100%;
     height: 30rem;
   }
-
   .parametres {
     right: -185px;
   }
-
   .a_propos .container_app .containt {
     margin-top: 2rem;
   }
-
   .a_propos .container_app .containt div.left, .a_propos .container_app .containt div.right {
     flex: 100%;
     text-align: center;
+  }
+  .content_princ {
+    width: 95%;
   }
 }
 @media screen and (max-width: 690px) {
@@ -1028,6 +1026,4 @@ header {
   .banniere_p .containt .slider .je {
     display: none;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
