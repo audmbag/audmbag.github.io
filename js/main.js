@@ -81,7 +81,7 @@ function montre(){
     if(hours >= 1 && hours <= 18){
         salut.innerText = 'Bonjour,'
     }
-    else /*if(hours > 18 && hours >= 23)*/{
+    else{
         salut.innerText = 'Bonsoir,'
     }
     heure.innerText = `${hours} :`
@@ -103,7 +103,7 @@ setInterval(() => {
 }, 1000)
 
 // survol de ma photo
-let my_image = document.querySelector('.a_propos .container_app .containt .center'),
+let my_image = document.querySelector('.a_propos .container_app .center'),
 image_app = document.querySelector('.image_hover')
 
 my_image.onmouseenter = () => {
@@ -133,60 +133,6 @@ window.onscroll = () => {
     theme_container.classList.remove('active')
 }
 
-// voir plus (portfolio)
-let voir_plus = document.querySelectorAll('.portfolio .conainer_portfolio .carte button')
-let work_toogle = document.querySelector('.work_toogle')
-let overlay = document.querySelector('.overlay')
-let close_btn = document.querySelector('.work_toogle .fa-times')
-let link_page = work_toogle.querySelector('.details p span a')
-let blog_toogle = document.querySelector('.blog_toogle')
-
-close_btn.onclick = () => {
-    work_toogle.classList.remove('active')
-    overlay.classList.remove('active')
-}
-overlay.onclick = () => {
-    work_toogle.classList.remove('active')
-    overlay.classList.remove('active')
-    blog_toogle.classList.remove('active')
-}
-let array = ['gestionbac2.cd', 'shoppychien.com', 'café.com', 'prav.com', 'efinance.cd', 'placeaud.com', 'audmbag.cd', 'audmbag.cd', 'shoppy.com']
-
-voir_plus.forEach((btn, index) => {
-    btn.onclick = (e) => {
-        work_toogle.classList.add('active')
-        overlay.classList.add('active')
-        let imagesrc = e.target.parentNode.querySelector('.image img').src
-        let link = e.target.getAttribute('data-name')
-        link_page.href = link
-        link_page.innerText = array[index]
-        work_toogle.querySelector('.image img').src = imagesrc
-    }
-})
-
-let btn_blog = document.querySelectorAll('.blog .containe_blog .blog_carte button')
-let titre = blog_toogle.querySelector('.containt h3')
-let image = blog_toogle.querySelector('.image img')
-let close = blog_toogle.querySelector('.fa-times')
-
-close.onclick = () => {
-    blog_toogle.classList.remove('active')
-    overlay.classList.remove('active')
-}
-btn_blog.forEach(btn => {
-    btn.onclick = (e) => {
-        overlay.classList.add('active')
-        blog_toogle.classList.add('active')
-        let title = e.target.parentNode.querySelector('h2').innerText
-        let img_link = e.target.parentNode.parentNode.querySelector('.image img').src
-        titre.innerHTML = title
-        image.src = img_link
-
-        console.log(title)
-    }
-})
-
-
 // formulaire de contact
 let inputs = document.querySelectorAll('.contact .container .formulaire form .cont_inp .input')
 
@@ -202,3 +148,4 @@ inputs.forEach(input => {
         }
     }
 })
+

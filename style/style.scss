@@ -123,11 +123,11 @@ h1, h2, h3{
     letter-spacing: 5px;
 }
 html{
-    font-size: 65%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 5px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--couleur-principale);
@@ -136,6 +136,10 @@ html{
 body{
     background-color: var(--background-sombre);
     overflow-x: hidden;
+}
+header {
+    min-height: 100vh;
+    position: relative;
 }
 .hautpage, .medias{
     position: absolute;
@@ -311,6 +315,35 @@ body{
     background-color: var(--background-clair);
     padding-top: 3rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+    
+    &.mobil_nav {
+        bottom: 0;
+        top: initial;
+        left: 0;
+        width: 100%;
+        height: 5rem;
+        padding: 0;
+        transform: none;
+        display: none;
+
+        ul {
+            flex-direction: row;
+            height: 100%;
+            li {
+                flex: 1;
+
+                a {
+                    width: 100%;
+                    padding-inline-start: 0;
+                    @include flex(center, center);
+                    height: 100%;
+                    i {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
     &.active{
         width: 20rem;
     }
@@ -511,6 +544,7 @@ body{
                 box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
                 color: var(--couleur-principale);
                 background-color: var(--background-clair);
+                white-space: nowrap;
                 &:hover{
                     box-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
                     color: var(--background-clair);
@@ -537,9 +571,9 @@ body{
 }
 .a_propos{
     padding-top: 2rem;
+    margin-top: 3rem;
     .container_app{
         @include flex(center, center);
-        gap: 5rem;
         flex-wrap: wrap;
         .containt{
             flex: 1 1 100%;
@@ -552,14 +586,6 @@ body{
                 }
                 &.right{
                     text-align: end;
-                    p{
-                        span:nth-child(1){
-                            color: var(--couleur-principale);
-                        }
-                        span:nth-child(2){
-                            color: var(--text);
-                        }
-                    }
                 }
                 p{
                     margin-bottom: 2rem;
@@ -571,57 +597,42 @@ body{
                     span:nth-child(1){
                         padding-right: 1rem;
                     }
-                }
-                &.cont_cnt{
-                    .center{
-                        height: 15rem;
-                        width: 15rem;
-                        border-radius: 50%;
-                        border: 1px solid var(--couleur-principale);
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                        }
-                    }
-                    a{
-                        font-size: 1.5rem;
-                        padding: 1rem 1.8rem;
-                        border-radius: 0.5rem;
-                        display: block;
-                        box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+                    a {
                         color: var(--couleur-principale);
-                        background-color: var(--background-clair);
-                        margin: auto;
-                        margin-top: 2rem;
-                        text-align: center;
-                        &:hover{
-                            box-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
-                            color: var(--background-clair);
-                            background: var(--couleur-principale);
-                        }
+                        text-decoration: underline;
                     }
                 }
             }
         }
-        .carte_container{
-            flex: 1 1 100%;
-            @include grid(250px, 2rem);
-
-            .carte{
-                padding: 2rem;
-                border-radius: .5rem;
-                box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
-                background-color: var(--background-clair);
-                h2{
-                    font-size: 3rem;
-                    font-weight: 600;
-                    color: var(--couleur-principale);
-                    margin-bottom: 2rem;
+        .cont_cnt{
+            .center{
+                height: 15rem;
+                width: 15rem;
+                border-radius: 50%;
+                outline: 1px solid var(--couleur-principale);
+                outline-offset: 3px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
-                p{
-                    font-size: 1.5rem;
-                    color: var(--text);
+            }
+            a{
+                font-size: 1.5rem;
+                padding: 1rem 1.8rem;
+                border-radius: 0.5rem;
+                display: block;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+                color: var(--couleur-principale);
+                background-color: var(--background-clair);
+                margin: auto;
+                margin-top: 2rem;
+                text-align: center;
+                &:hover{
+                    box-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
+                    color: var(--background-clair);
+                    background: var(--couleur-principale);
                 }
             }
         }
@@ -682,61 +693,6 @@ body{
                 font-size: 1.5rem;
                 color: var(--titres);
                 margin-top: 2rem;
-            }
-        }
-    }
-    .ma_formation{
-        margin-top: 5rem;
-        .container{
-            @include flex(space-between, center);
-            flex-wrap: wrap;
-            gap: 15rem;
-
-            .containt{
-                flex: 30%;
-                margin-left: 20px;
-                padding-left: 30px;
-                border-left: 1px solid var(--couleur-principale);
-                .carte{
-                    &:nth-child(1){
-                        margin-bottom: 3rem;
-                    }
-                    h2{
-                        display: inline-block;
-                        padding: .5rem 1rem;
-                        border-radius: 999px;
-                        color: var(--titres);
-                        background-color: var(--background-clair);
-                        font-size: 1.5rem;
-                        font-weight: 600;
-                        position: relative;
-                        box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
-                        margin-bottom: 2rem;
-                        i{
-                            position: absolute;
-                            top: 50%;
-                            left: -50px;
-                            transform: translateY(-50%);
-                            color: var(--couleur-principale);
-                            @include flex(center, center);
-                            font-size: 1.5rem;
-                            border-radius: 50%;
-                            height: 3.5rem;
-                            width: 3.5rem;
-                            background-color: var(--background-clair);
-                            box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
-                        }
-                    }
-                    h3{
-                        color: var(--couleur-principale);
-                        margin-bottom: 1rem;
-                        font-size: 1.5rem;
-                    }
-                    p{
-                        font-size: 1.4rem;
-                        color: var(--text);
-                    }
-                }
             }
         }
     }
@@ -899,9 +855,74 @@ body{
 }
 
 
+
+.container_email_confirmed {
+    @include flex(center, center);
+    height: 100vh;
+    flex-direction: column;
+
+    h1 {
+        font-size: 5rem;
+        color: var(--couleur-principale);
+    }
+    p {
+        margin: 2rem 0;
+        color: var(--text);
+        font-size: 1.7rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+        padding: 1rem 1.8rem;
+        border-radius: 0.5rem;
+        display: block;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        color: var(--couleur-principale);
+        background-color: var(--background-clair);
+        white-space: nowrap;
+
+        &:hover {
+            color: var(--background-clair);
+            background-color: var(--couleur-principale);
+        }
+    }
+}
+
+
+
 @media screen and (max-width: 1000px) {
     .a_propos .ma_formation .container{
         gap: 5rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .navigation {
+        display: none;
+
+        &.mobil_nav {
+            display: block;
+        }
+    }
+    .banniere_p {
+        width: 95%;
+    }
+    .content_princ {
+        width: 75%;
+    }
+
+    .medias {
+        left: 0;
+        bottom: 0;
+    }
+    .montre_logo {
+        left: 3rem;
+    }
+    footer {
+        margin-top: 5rem;
+    }
+
+    .titre {
+        margin-left: 3rem;
     }
 }
 @media screen and (max-width: 750px) {
@@ -927,6 +948,13 @@ body{
     }
     .parametres{
         right: -185px;
+    }
+    .a_propos .container_app .containt {
+        margin-top: 2rem;
+    }
+    .a_propos .container_app .containt div.left, .a_propos .container_app .containt div.right {
+        flex: 100%;
+        text-align: center;
     }
 }
 @media screen and (max-width: 690px) {
@@ -958,27 +986,9 @@ body{
         }
     }
 }
-@media screen and (max-width: 500px) {
-    .navigation{
-        left: .5rem;
-        height: 99vh;
-    }
-    .parametres{
-        top: 5px;
-    }
-    .banniere_p{
-        width: 100%;
-        padding-left: 5rem;
-    }
-    .content_princ{
-        margin-left: 7rem;
-    }
-    .montre_logo{
-        left: 7rem;
-    }
-}
 @media screen and (max-width: 430px) {
     .banniere_p .containt .slider .je{
         display: none;
     }
 }
+
